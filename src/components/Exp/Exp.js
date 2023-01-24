@@ -1,6 +1,7 @@
 
 import ExpFilter from './ExpFilter'
 import Card from '../UI/Card';
+import ExpChart from './ExpChart';
 import React, { useState } from 'react';
 import './Exp.css';
 import ExpList from './ExpList';
@@ -19,6 +20,7 @@ function Exp(props) {
         <div>
             <Card className="expenses">
                 <ExpFilter onChangeFilter={filterChangeHandler} selected={filteredYear} />
+                <ExpChart expenses={filtredExp} />
                 <ExpList items={filtredExp} />
             </Card>
         </div>

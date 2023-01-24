@@ -5,7 +5,7 @@ import './ExpItem.css';
 function ExpItem(props) {
 
 	return (
-		<ul>
+		<li>
 			<Card className='expense-item'>
 				<ExpDate date={props.date} />
 				<div className='expense-item__description'>
@@ -13,7 +13,7 @@ function ExpItem(props) {
 					<div className='expense-item__price'>${props.amount}</div>
 				</div>
 			</Card>
-		</ul>
+		</li>
 	);
 }
 

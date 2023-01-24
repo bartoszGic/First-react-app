@@ -9,7 +9,12 @@ const ExpList = (props) => {
     return (
         <ul className='expenses-list'>
             {props.items.map(exp => (
-                <ExpItem key={exp.id} title={exp.title} amount={exp.amount} date={exp.date} />))}
+                <ExpItem
+                    key={exp.id}
+                    title={exp.title}
+                    amount={exp.amount}
+                    date={exp.date} />
+            ))}
         </ul>
     )
 }
